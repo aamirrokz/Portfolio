@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="css/mystyles.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+        crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+
+            // Check for click events on the navbar burger icon
+            $(".navbar-burger").click(function () {
+
+                // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+                $(".navbar-burger").toggleClass("is-active");
+                $(".navbar-menu").toggleClass("is-active");
+
+            });
+        });
+    </script>
+</head>
+
+<body class="has-navbar-fixed-top has-background-warning">
+
+    <section id="hero-image"class="hero is-warning is-large">
+        <div class="hero-head">
+            <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+                <div class="navbar-brand">
+                    <a class="navbar-item" href="#">
+                        <img height="75" width="75" src="images/code-svg.svg">
+                    </a>
+
+                    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                    </a>
+                </div>
+                <div class="navbar-menu">
+                    <div class="navbar-end">
+                        <a href="#Home" class="navbar-item">
+                            Home
+                        </a>
+                        <a href="#Projects" class="navbar-item">
+                            Projects
+                        </a>
+                        <a href="#contact" class="navbar-item">
+                            Contact
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <div id="Home" class="hero-body">
+            <div class="container has-text-centered">
+                <figure class="image is-128x128">
+                    <img class="is-rounded" src="images/profile_image.jpg">
+                </figure>
+                <h1 class="title is-size-1 has-text-dark">
+                    Aamir Contractor
+                </h1>
+                <h2 class="subtitle is-size-4 has-text-dark">
+                    Front-end Web Developer
+                </h2>
+            </div>
+        </div>
+    </section>
+
+    <section id="Projects" class="hero is-medium is-dark">
+        <div class="hero-head has-text-centered">
+            <h1 class='title is-1'>Projects</h1>
+        </div>
+        <div class="hero-body" id="project">
+            <div class="columns">
+                <div class="column">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image is-4by3">
+                                <img src="images/project-image.jpg" alt="Placeholder image">
+                            </figure>
+                            <div class="content has-text-centered is-size-5">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.
+                                <a>@bulmaio</a>.
+                                <a href="#">#css</a>
+                                <a href="#">#responsive</a>
+                                <br>
+                                <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image is-4by3">
+                                <img src="images/project-image.jpg" alt="Placeholder image">
+                            </figure>
+                            <div class="content has-text-centered is-size-5">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.
+                                <a>@bulmaio</a>.
+                                <a href="#">#css</a>
+                                <a href="#">#responsive</a>
+                                <br>
+                                <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image is-4by3">
+                                <img src="images/project-image.jpg" alt="Placeholder image">
+                            </figure>
+                            <div class="content has-text-centered is-size-5">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.
+                                <a>@bulmaio</a>.
+                                <a href="#">#css</a>
+                                <a href="#">#responsive</a>
+                                <br>
+                                <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="hero is-info is-medium">
+        <div class="hero-head has-text-centered">
+            <h1 class='title is-1'>Contact Me</h1>
+        </div>
+        <div class="hero-body">
+            <div id="form-legend" class="container">
+                <div class="field is-horizontal">
+                    <label class="label field-label">Name</label>
+                    <div class="control field-body">
+                        <input class="input" type="text" placeholder="Name please..!">
+                    </div>
+                </div>
+
+                <div class="field is-horizontal">
+                    <label class="label field-label">Email</label>
+                    <div class="control field-body">
+                        <input class="input" type="email" placeholder="email@example.com">
+                    </div>
+                </div>
+
+                <div class="field is-horizontal">
+                    <label class="label field-label">Message</label>
+                    <div class="control field-body">
+                        <textarea class="textarea" placeholder="e.g. Hello world"></textarea>
+                    </div>
+                </div>
+
+                <div class="field is-horizontal">
+                    <label class="label field-label"></label>
+                    <div class="control field-body">
+                        <button class="button is-success">
+                            Send
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+    </section>
+
+    <footer class="footer">
+        <div class="level">
+            <div class="level-left">
+                <div class="level-item">
+                    <p>
+                        Made with
+                        <strong>Bulma</strong> by
+                        <a href='#'>Aamir</a>
+                    </p>
+                </div>
+            </div>
+            <div class="level-right">
+                <div class="level-item">
+                    <a>
+                        <span class="icon is-medium has-text-info">
+                            <i class="fa fa-lg fa-facebook-f"></i>
+                        </span>
+                    </a>
+                    <a>
+                        <span class="icon is-medium has-text-info">
+                            <i class="fa fa-lg fa-instagram"></i>
+                        </span>
+                    </a>
+                    <a>
+                        <span class="icon is-medium has-text-info">
+                            <i class="fa fa-lg fa-github"></i>
+                        </span>
+                    </a>
+                    <a>
+                        <span class="icon is-medium has-text-info">
+                            <i class="fa fa-lg fa-codepen"></i>
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+
+    </footer>
+
+</body>
+
+</html>

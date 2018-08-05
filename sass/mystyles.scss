@@ -1,0 +1,55 @@
+@charset "utf-8";
+@import "../myBulma/bulma-0.7.1/bulma.sass";
+
+
+
+#form-legend {
+    max-width: 500px;
+}
+
+h1.title.is-1 {
+    padding-top: 3rem;
+  
+  }
+
+  #project {
+    padding-top: 3rem;
+  }
+
+  .navbar-item {
+      font-size: 1.2rem;
+  }
+
+  .image.is-128x128 {
+      margin: auto;
+  }
+
+  .title:not(:last-child){
+      margin-top:1.5rem;
+  }
+
+  .navbar-item img {
+      max-height: 2.75rem;
+  }
+ 
+  .footer{
+    padding: 3rem 1.5rem 3rem;
+  }
+  @media screen and (min-width: 769px), print {
+    .hero.is-large .hero-body {
+      padding-bottom: 18rem;
+      padding-top: 9rem; 
+    }
+}
+
+
+
+// @media screen and (max-width: 768px) {
+//     .navbar-brand, .navbar-tabs{
+//          background-color: #ffdd57;
+// }
+
+// .navbar-menu {
+//     background-color: #ffdd57;
+// }
+// }
